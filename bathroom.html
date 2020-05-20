@@ -1,0 +1,199 @@
+<html>
+
+   <head>
+   <style>
+body {
+background-image: url('bm.gif');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.mycursor {
+cursor: url("bold.png"), auto;
+}
+
+audio
+{
+position: absolute;
+    top: 200%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+@font-face {
+  font-family: text;
+  src: url(PixelitoCM.ttf);
+}
+
+.return{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+transform: translateX(-50%);
+   text-align: center;
+}
+
+.floor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 43.2%;
+    left: 12%;
+
+}
+
+.gfloor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 43%;
+    left: 16%;
+
+}
+
+.door{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 29%;
+    left: 74%;
+
+}
+
+.gdoor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 43%;
+    left: 80%;
+
+}
+
+.stair{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 93.8%;
+    left: 2.9%;
+
+}
+
+
+.next{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 93.8%;
+    left: 92.3%;
+
+}
+
+h2{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+}
+
+a:link, a:visited, a:active{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+  text-decoration: none;
+}
+
+a:visited
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #8B008B;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #D8BFD8;
+  cursor: url("glitch.png"), auto;
+}
+
+h2:hover{
+  color: #D8BFD8;
+}
+
+.glitch:hover{
+  cursor: url("glitch.png"), auto;
+  filter: hue-rotate(270deg);
+  transition-duration: 2s;
+}
+
+</style>
+   </head>
+
+   <body class="mycursor">
+<div class="next">
+<a href="hallway.html"> hallway ></a>
+</div>
+<div class="stair">
+<a href="end.html"> < turn around </a>
+</div>
+     <div class="floor">
+       <h2 id="floor"> shower </h2>
+     </div>
+     <div class="door">
+       <h2 id="door"> look at you! </h2>
+      </div>
+
+
+
+<div class="gfloor">
+       <img id="gfloor" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+<div class="gdoor">
+       <img id="gdoor" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+
+
+       <div class="return">
+       <h2> congratulations! you found the audio controls! now be a good intruder and scroll back up. there's nothing else here for you. </h2>
+       </div>
+          <script>
+       document.getElementById("floor").onclick = function() {floor()};
+       function floor() {
+       alert("You could ‘wash away your sins’ hahaha… ꋧ(⋆ʾꇶʿ⋆) sry, I’ll stop.(╥_╥)");
+       }
+       document.getElementById("door").onclick = function() {door()};
+       function door() {
+       alert("I’ve almost shown you the whole space! We’re going to have to say goodbye soon, how unfortunate ༼ಢ_ಢ༽. Awww, I haven’t known you long but I’m gonna remember you over the others!!!༼☯﹏☯༽");
+       }
+
+
+       document.getElementById("gfloor").onclick = function() {gfloor()};
+       function gfloor() {
+       alert("I wish you could wash away memories.");
+       }
+       document.getElementById("gdoor").onclick = function() {gdoor()};
+       function gdoor() {
+       alert("I came up with a plan on what to do in the future. I would grab Buck and my phone, run here, lock the door to the hallway, lock this door and call the police.");
+     }
+       </script>
+
+       <audio src="entry.mp3" loop controls autoplay>
+      audio is not supported.
+    </audio>
+
+   </body>
+
+</html>

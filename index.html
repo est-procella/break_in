@@ -1,0 +1,88 @@
+<html>
+
+   <head>
+   <style>
+
+body {
+background-color: black;
+}
+
+@font-face {
+  font-family: text;
+  src: url(PixelitoCM.ttf);
+}
+
+h2{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+h3{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+a:link, a:active, a:visited{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+}
+
+.mycursor {
+cursor: url("bold.png"), auto;
+}
+
+h3:hover{
+  cursor: url("glitch.png"), auto;
+}
+
+h3:hover{
+  color: #D8BFD8;
+}
+
+a:hover{
+  color: #D8BFD8;
+  cursor: url("bold.png"), auto;
+}
+
+</style>
+   </head>
+
+   <body class="mycursor">
+    <h2> break in?</h2></br>
+    <a href="livingspace.html"> > yes. </a>
+    <h3 id="no">> no.</h3>
+
+    <script>
+    document.getElementById("no").onclick = function() {myFunction()};
+ function myFunction() {
+ alert("you can leave then.");
+ }
+  </script>
+   </body>
+
+</html>

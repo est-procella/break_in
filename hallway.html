@@ -1,0 +1,196 @@
+<html>
+
+   <head>
+   <style>
+body {
+background-image: url('hw.gif');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.mycursor {
+cursor: url("bold.png"), auto;
+}
+
+audio
+{
+position: absolute;
+    top: 200%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+@font-face {
+  font-family: text;
+  src: url(PixelitoCM.ttf);
+}
+
+.return{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+transform: translateX(-50%);
+   text-align: center;
+}
+
+.floor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 45.2%;
+    left: 49.8%;
+
+}
+
+.gfloor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49.2%;
+    left: 51.6%;
+
+}
+
+.door{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50.2%;
+    left: 67.9%;
+
+}
+
+.gdoor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 49%;
+    left: 73%;
+
+}
+
+
+.stair{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 93.8%;
+    left: 4.2%;
+
+}
+
+
+.next{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 93.8%;
+    left: 92.1%;
+
+}
+
+h2{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+}
+
+a:link, a:visited, a:active{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+  text-decoration: none;
+}
+
+a:visited
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #8B008B;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #D8BFD8;
+  cursor: url("glitch.png"), auto;
+}
+
+h2:hover{
+  color: #D8BFD8;
+}
+
+.glitch:hover{
+  cursor: url("glitch.png"), auto;
+  filter: hue-rotate(270deg);
+  transition-duration: 2s;
+}
+
+</style>
+   </head>
+
+   <body class="mycursor">
+<div class="next">
+<a href="bathroom.html"> bathroom ></a>
+</div>
+<div class="stair">
+<a href="stairs.html"> < stairs </a>
+</div>
+     <div class="floor">
+       <h2 id="floor"> hello again! </h2>
+     </div>
+     <div class="door">
+       <h2 id="door"> darkened</br>passageway </h2>
+      </div>
+
+<div class="gfloor">
+       <img id="gfloor" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+<div class="gdoor">
+       <img id="gdoor" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+
+       <div class="return">
+       <h2> congratulations! you found the audio controls! now be a good intruder and scroll back up. there's nothing else here for you. </h2>
+       </div>
+          <script>
+       document.getElementById("floor").onclick = function() {floor()};
+       function floor() {
+       alert("Hello again! ٩(♡ε♡ )۶I hope I’ve made moving around the space as comfortable as possible. ＼(*ﾟ∀ﾟ*)／The guard is so swift at moving around this place, even in the darkness. Every turn, every step, every light switch is instinctive.(･ﾟρﾟ)");
+       }
+       document.getElementById("door").onclick = function() {door()};
+       function door() {
+       alert("Careful《ﾟДﾟ》, there’s a step here. Don’t trip over it.(ó﹏ò｡)");
+       }
+
+       document.getElementById("gfloor").onclick = function() {gfloor()};
+       function gfloor() {
+       alert("When I think back to that day… I was angry more than any other emotion… I’d never felt the urge to hurt someone before that.");
+       }
+       document.getElementById("gdoor").onclick = function() {gdoor()};
+       function gdoor() {
+       alert("I used to be scared of ghosts in the dark. Turns out there’s nothing scarier than the living.");
+     }
+       </script>
+
+       <audio src="hallway.mp3" loop controls autoplay>
+      audio is not supported.
+    </audio>
+
+   </body>
+
+</html>

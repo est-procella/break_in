@@ -1,0 +1,221 @@
+<html>
+
+   <head>
+   <style>
+body {
+background-image: url('br.gif');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.mycursor {
+cursor: url("bold.png"), auto;
+}
+
+audio
+{
+position: absolute;
+    top: 200%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+@font-face {
+  font-family: text;
+  src: url(PixelitoCM.ttf);
+}
+
+.return{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 250%;
+    left: 50%;
+transform: translateX(-50%);
+   text-align: center;
+}
+
+.floor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 71.5%;
+    left: 45.4%;
+
+}
+
+.gfloor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 73.2%;
+    left: 51.8%;
+
+}
+
+.door{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 67%;
+    left: 42%;
+
+}
+
+.gdoor{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 68%;
+    left: 40%;
+
+}
+
+.drawer{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30.6%;
+    left: 75.2%;
+
+}
+
+.gdrawer{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 27.6%;
+    left: 75.4%;
+
+}
+
+.stair{
+
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 93.8%;
+    left: 2.9%;
+
+}
+
+h2{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+}
+
+a:link, a:visited, a:active{
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #BA55D3;
+  text-decoration: none;
+}
+
+a:visited
+  font-family: text;
+  font-style: normal;
+  font-size: 18px;
+  color: #8B008B;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #D8BFD8;
+  cursor: url("glitch.png"), auto;
+}
+
+h2:hover{
+  color: #D8BFD8;
+}
+
+.glitch:hover{
+  cursor: url("glitch.png"), auto;
+  filter: hue-rotate(270deg);
+  transition-duration: 2s;
+}
+
+</style>
+   </head>
+
+   <body class="mycursor">
+
+<div class="stair">
+<a href="livingspace.html"> < living space </a>
+</div>
+     <div class="floor">
+       <h2 id="floor"> surveillance </h2>
+     </div>
+     <div class="door">
+       <h2 id="door"> bed </h2>
+      </div>
+     <div class="drawer">
+       <h2 id="drawer"> balcony </h2>
+   </div>
+
+
+
+<div class="gfloor">
+       <img id="gfloor" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+<div class="gdoor">
+       <img id="gdoor" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+<div class="gdrawer">
+       <img id="gdrawer" alt="█" img class="glitch" src="glitchblock.png"
+       width="20" height="20">
+</div>
+
+</div>
+
+       <div class="return">
+       <h2> congratulations! you found the audio controls! now be a good intruder and scroll back up. there's nothing else here for you. </h2>
+       </div>
+          <script>
+       document.getElementById("floor").onclick = function() {floor()};
+       function floor() {
+       alert("The guard doesn’t have the technology for it right now but they plan to rig up cameras around the place and keep a watch on everything 24/7.(ఠ ̥̆ ఠ) We picked a good time to rob this place… ლ（╹ε╹ლ）I wonder if someone will watch the guard as they watch the place…(ര௰ര)");
+       }
+       document.getElementById("door").onclick = function() {door()};
+       function door() {
+       alert("The guard sleeps here, they’re missing right now.¯\_(⊙_ʖ⊙)_/¯");
+       }
+
+       document.getElementById("drawer").onclick = function() {drawer()};
+       function drawer() {
+       alert("The balcony outside could be an exit, unfortunately it may draw too much attention as it faces the street. （；＿；）That and the fact that we’re three storeys up.╰(⸝⸝⸝´꒳`⸝⸝⸝)╯");
+       }
+
+       document.getElementById("gfloor").onclick = function() {gfloor()};
+       function gfloor() {
+       alert("Being watched through a screen is less frightening than real life. At least I can control what’s seen through this.");
+       }
+       document.getElementById("gdoor").onclick = function() {gdoor()};
+       function gdoor() {
+       alert("I stay awake here more than I sleep.");
+     } document.getElementById("gdrawer").onclick = function() {gdrawer()};
+        function gdrawer() {
+        alert("These curtains haven’t been drawn open since I got here.");
+      }
+       </script>
+
+       <audio src="bedroom.mp3" loop controls autoplay>
+      audio is not supported.
+    </audio>
+
+   </body>
+
+</html>
